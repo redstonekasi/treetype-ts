@@ -1,8 +1,5 @@
 # treetype-ts
 
-## Todo
-- [ ] Allow for local files to be imported in the definition file.
-
 ## Usage
 *This usage might not always be up-to-date, please check `ttgen -h`.*
 ```bash
