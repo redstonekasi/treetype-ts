@@ -1,7 +1,7 @@
 {
   "name": "treetype-ts",
   "description": "treetype but ts and magic",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
@@ -13,6 +13,12 @@
     "dev": "rimraf dist && tsc-watch --onSuccess \"pnpm run start\"",
     "prepare": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redstonekasi/treetype-ts.git"
+  },
+  "bugs": "https://github.com/redstonekasi/treetype-ts/issues",
+  "homepage": "https://github.com/redstonekasi/treetype-ts#readme",
   "author": "redstonekasi",
   "license": "BSD-3-Clause",
   "devDependencies": {
