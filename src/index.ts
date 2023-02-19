@@ -2,7 +2,7 @@
 import { Project } from "ts-morph";
 import { cli } from "cleye";
 import { kebabCase } from "scule";
-import { addReferencedNodes, createImportMap, walkModules } from "./logic";
+import { addReferencedNodes, createImportMap, walkModules } from "./logic.js";
 
 const argv = cli({
   name: "ttgen",
