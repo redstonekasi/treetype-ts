@@ -122,7 +122,12 @@ export function addReferencedNodes(source: SourceFile, out: SourceFile, exclude:
   function addNode(node: Node<ts.Node>) {
     if (Node.isTypeAliasDeclaration(node)) out.addTypeAlias(node.getStructure());
     else if (Node.isInterfaceDeclaration(node)) out.addInterface(node.getStructure());
-    else if (Node.isEnumDeclaration(node)) out.addEnum(node.getStructure());
+    else if (Node.isEnumDeclaration(node)) {
+      const struct = node.getStructure();
+      struct.isExported = false;
+      struct.hasDeclareKeyword = true;
+      out.addEnum(struct);
+    }
   }
 
   source.forEachChild((node) => {
