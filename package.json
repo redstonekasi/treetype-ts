@@ -1,7 +1,7 @@
 {
   "name": "treetype-ts",
   "description": "treetype but ts and magic",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "main": "dist/index.js",
   "type": "module",
   "bin": {

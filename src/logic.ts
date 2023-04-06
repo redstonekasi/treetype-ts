@@ -126,6 +126,7 @@ export function addReferencedNodes(source: SourceFile, out: SourceFile, exclude:
       const struct = node.getStructure();
       struct.isExported = false;
       struct.hasDeclareKeyword = true;
+      struct.isConst = true;
       out.addEnum(struct);
     }
   }
