@@ -1,5 +1,9 @@
 # treetype-ts
 
+> [!WARNING]
+> treetype-ts has been superceded by a much better version making proper use of
+> the TypeScript API at https://github.com/uwu/treetype
+
 ## Usage
 *This usage might not always be up-to-date, please check `ttgen -h`.*
 ```bash
